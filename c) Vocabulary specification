@@ -1,0 +1,240 @@
+<Element Overview Table>
+  
+1. dcterms:title
+The official name of the game
+2. dcterms:creator
+The developer or studio that created the game
+3	dcterms:publisher	
+The company/organization that published/distributed the game
+4	dcterms:description	
+A brief summary of the game's content, gameplay, and educational purpose
+5	dcterms:language	
+The language(s) in which the game is available
+6	dcterms:issued	
+  The original release date of the game
+7	dcterms:subject
+  The academic subject area(s) addressed by the game
+8	edgms:educationalLevel	
+  The intended educational level or grade range of the target user
+9	edgms:learningObjective	
+  The specific learning goals or outcomes the game aims to support
+10	edgms:genre	
+  The gameplay genre of the game
+11	edgms:platform	
+  The device, operating system, or web environment on which the game can be accessed or played
+12	edgms:playMode	
+  Describes whether the game is played individually, cooperatively, competitively, or as a classroom-wide activity
+13	edgms:educationalUseType	
+  Indicates the educational role or category of the digital game, game-based tool, or interactive learning environment.
+14	edgms:interactivityType	
+  The primary mode of user interaction with the game
+15	edgms:pricingModel	
+  The pricing or access model through which users or institutions can obtain and use the game
+
+<Data Dictionary>
+
+Element 1: Title
+Field	Detail
+Element Name	Title
+Label	Game Title
+URI	http://purl.org/dc/terms/title
+Definition	The official name of the object as designated by its creator or publisher.
+Data Values	Free text string
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	No (use alternate title as a sub-element if needed)
+Comments	Sub-element: alternativeTitle may be used for localized or subtitle variants.
+Example	Minecraft: Education Edition
+
+Element 2: Creator
+Field	Detail
+Element Name	Creator
+Label	Game Creator / Developer
+URI	http://purl.org/dc/terms/creator
+Definition	The individual, team, or studio primarily responsible for designing and developing the game.
+Data Values	Free text string; use authorized form of name where possible (e.g., Library of Congress Name Authority File)
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	Yes (if multiple developers)
+Comments	Distinct from Publisher. If creator and publisher are the same entity, both elements should still be filled separately.
+Example	Mojang Studios
+
+Element 3: Publisher
+Field	Detail
+Element Name	Publisher
+Label	Publisher
+URI	http://purl.org/dc/terms/publisher
+Definition	The organization responsible for distributing or making the game publicly available.
+Data Values	Free text string
+Cardinality: Mandatory	No
+Cardinality: Repeatable	Yes
+Comments	In cases where the developer self-publishes, the same name as Creator may appear.
+Example	Microsoft
+
+Element 4: Description
+Field	Detail
+Element Name	Description
+Label	Game Description
+URI	http://purl.org/dc/terms/description
+Definition	A concise textual summary of the game's content, core mechanics, and educational purpose.
+Data Values	Free text string (recommended 50–300 words)
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	No
+Comments	Should be written in plain language accessible to educators and non-specialist users. Avoid marketing language.
+Example	Minecraft: Education Edition is a sandbox game in which students build structures, explore environments, and complete teacher-designed lessons across subjects including STEM, history, and language arts.
+
+Element 5: Language
+Field	Detail
+Element Name	Language
+Label	Available Language(s)
+URI	http://purl.org/dc/terms/language
+Definition	The language(s) in which the game's interface, text, and audio content are available.
+Data Values	Controlled vocabulary — ISO 639-1 language codes
+Cardinality: Mandatory	No
+Cardinality: Repeatable	Yes
+Comments	Use ISO 639-1 two-letter codes. Multiple values allowed when the game supports multiple languages.
+Example	en, ko
+
+Element 6: Issued Date
+Field	Detail
+Element Name	Issued
+Label	Release Date
+URI	http://purl.org/dc/terms/date
+
+Definition	The original date on which the game was first publicly released.
+Data Values	ISO 8601 date format (YYYY-MM-DD or YYYY)
+Cardinality: Mandatory	No
+Cardinality: Repeatable	No
+Comments	If exact date is unknown, year alone (YYYY) is acceptable. Updated/re-released versions may be recorded in a sub-element: edgms:updateDate.
+Example	2016-11-01
+
+Element 7: Subject
+Field	Detail
+Element Name	Subject
+Label	Subject Area
+URI	http://purl.org/dc/terms/subject
+Definition	The academic subject(s) or knowledge domain(s) that the game addresses or supports.
+Data Values	Controlled vocabulary (see Appendix A)
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	Yes
+Comments	Multiple subjects allowed. Use terms from Appendix A. If no existing term applies, use "General" or propose a new term.
+If "Other" is used, a local note should be added to explain the subject area.
+Example	Mathematics; Science
+
+Element 8: Educational Level
+Field	Detail
+Element Name	EducationalLevel
+Label	Educational Level
+URI	http://edgms.org/schema/educationalLevel
+Definition	The intended educational stage or grade range for which the game is designed or most appropriate.
+Data Values	Controlled vocabulary (see Appendix B)
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	Yes
+Comments	Based on IEEE LOM educationalLevel. Multiple levels allowed.
+Example	Elementary School; Middle School
+
+Element 9: Learning Objective
+Field	Detail
+Element Name	LearningObjective
+Label	Learning Objective
+URI	http://edgms.org/schema/learningObjective
+
+Definition	A statement describing the specific knowledge, skill, or competency a learner is expected to develop through engagement with the game.
+Data Values	Free text string; should follow action-verb format
+Cardinality: Mandatory	No
+Cardinality: Repeatable	Yes
+Comments	Recommended to align with established frameworks such as Bloom's Taxonomy. Multiple objectives may be listed.
+Example	Students will be able to apply basic algebraic reasoning to solve in-game puzzles.
+
+Element 10: Genre
+Field	Detail
+Element Name	Genre
+Label	Game Genre
+URI	http://edgms.org/schema/genre
+Definition	The gameplay or activity category that characterizes the primary mechanics and structure of the object.
+Data Values	Controlled vocabulary (see Appendix C)
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	Yes
+Comments	A game may belong to more than one genre
+Example	Sandbox; Simulation
+
+Element 11: Platform
+Field	Detail
+Element Name	Platform
+Label	Platform / Device
+URI	http://edgms.org/schema/platform
+
+Definition	The hardware device, operating system, or web environment on which the object can be accessed or played.
+Data Values	Controlled vocabulary (see Appendix D)
+Cardinality:
+Mandatory	Yes
+Cardinality: Repeatable	Yes
+Comments	Browser-based games should be listed as "Web Browser" rather than by OS.
+Example	Windows; macOS; iPad
+
+Element 12: Play Mode
+Field	Detail
+Element Name	PlayMode
+Label	Play Mode
+URI	http://edgms.org/schema/playMode
+
+Definition	Describes whether the game is designed for individual play, cooperative group play, or competitive multiplayer interaction.
+Data Values	Controlled vocabulary (see Appendix E)
+Cardinality: Mandatory	No
+Cardinality: Repeatable	Yes
+Comments	"Classroom-wide" refers to games like Kahoot! where one game is shared across an entire class simultaneously.
+Example	Single-player; Cooperative Multiplayer
+
+Element 13: Educational Use Type
+Field	Detail
+Element Name	EducationalUseType
+Label	Educational Use Type
+URI	http://edgms.org/schema/educationalUseType
+Definition	Indicates the educational role or category of the digital game, game-based tool, or interactive learning environment. It distinguishes between objects originally designed for education, gamified learning platforms, commercial games repurposed for educational use, and programming or creative learning environments.
+Data Values	Controlled vocabulary (see Appendix F)
+Cardinality: Mandatory	Yes
+Cardinality: Repeatable	No
+Comments	This element helps users understand how the object fits into educational use beyond its gameplay genre or subject area. If "Other" is used, a local note should explain the category.
+Example	Commercial Game Repurposed for Education
+
+Element 14: InteractivityType
+Field	Detail
+Element Name	InteractivityType
+Label	Interactivity Type
+URI	http://edgms.org/schema/interactivityType
+Definition	The primary mode through which a learner interacts with the game content.
+Data Values	Controlled vocabulary (see Appendix G)
+Cardinality — Mandatory	No
+Cardinality — Repeatable	No
+Comments	“Active" = learner must perform tasks; "Expositive" = learner receives content passively; "Mixed" = combination of both.
+Example	Active
+
+Element 15: PricingModel
+Field	Detail
+Element Name	PricingModel
+Label	Pricing Model / Access
+URI	http://edgms.org/schema/pricingModel
+Definition	The pricing or access model through which the game is obtained by users or institutions.
+Data Values	Controlled vocabulary (see Appendix H)
+Cardinality — Mandatory	No
+Cardinality — Repeatable	No
+Comments	"Freemium" refers to games with a free base version and paid premium features. Institutional License applies to school/district-wide licensing models.
+Example	Institutional License
+
+<Controlled Vocabulary Appendix>
+
+Appendix A — Subject Area
+(This vocabulary is recommended for values entered in dcterms:subject. Because dcterms:subject is reused from the external DCMI Terms schema, the values are documented as a local EDGMS recommendation rather than enforced directly through XSD enumeration.)
+Mathematics / Science / Language Arts / Social Studies / History / Geography / Computer Science / Foreign Language / Art / Music / Physical Education / Career Education / General / Other
+Appendix B — Educational Level
+Early Childhood (Pre-K) / Elementary School (K-5) / Middle School (6-8) / High School (9-12) / Undergraduate / Lifelong Learning / All Ages
+Appendix C — Game Genre
+Puzzle / Simulation / Role-Playing Game (RPG) / Strategy / Sandbox / Quiz / Adventure / Platformer / Typing / Language Learning / Other
+Appendix D — Platform
+Windows / macOS / Linux / iOS / Android / Web Browser / Nintendo Switch / Other
+Appendix E — Play Mode
+Single-player / Cooperative Multiplayer / Competitive Multiplayer / Classroom-wide
+Appendix F — Educational Use Type
+Explicitly Educational Game / Gamified Learning Platform / Commercial Game Repurposed for Education / Educational Programming Environment / Gamified Learning Tool / Other
+Appendix G — Interactivity Type
+Active / Expositive / Mixed
+Appendix H — Pricing Model
+Free / Freemium / Paid (One-time) / Subscription-based / Institutional License / Open Educational Resource / Other
