@@ -1,7 +1,0 @@
-사용한 standards
-1. Dublin Core / DCMI Terms
- - 기본 서지 정보에 사용
- - title, creator, publisher, description, language, issued, subject 등 
-2. Local EDGMS namespace
- - 교육용 디지털 게임에 특화된 요소를 표현하기 위해 사용
- - educationalLevel, learningObjective, genre, platform, playMode, assessmentType, educationalUseType, pricingModel 등
