@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edgms:educationalDigitalGame
+xmlns:edgms="http://edgms.org/schema/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://edgms.org/schema/ edgms.xsd">
+
+```
+
+<!--
+    XML instance record for Prodigy Math.
+    This record follows the EDGMS XSD structure.
+
+    AI 사용 및 수정 내역:
+    기본 틀은 AI를 사용했고, 각 요소의 내용은 Draft 3에서 작성한 내용과 위키피디아를 기반으로 작성했다.
+    
+    수정 1. xmlns="http://edgms.org/schema/"도 함께 선언했었는데, xmlns:edgms="http://edgms.org/schema/"가 있어 굳이 넣을 필요 없다고 판단해 삭제했다.
+-->
+
+<dcterms:title>Prodigy Math</dcterms:title>
+
+<dcterms:creator>SMARTeacher</dcterms:creator>
+
+<dcterms:publisher>Prodigy Education</dcterms:publisher>
+
+<dcterms:description>
+    Prodigy Math is a fantasy-themed role-playing game in which students answer curriculum-aligned math questions to progress through battles, quests, and storylines. 
+    It is designed for elementary and middle school mathematics practice through adaptive math questions and game-based progression.
+</dcterms:description>
+
+<dcterms:language>en</dcterms:language>
+
+<dcterms:issued>2011</dcterms:issued>
+
+<dcterms:subject>Mathematics</dcterms:subject>
+
+<edgms:educationalLevel>Elementary School (K-5)</edgms:educationalLevel>
+<edgms:educationalLevel>Middle School (6-8)</edgms:educationalLevel>
+
+<edgms:learningObjective>
+    Students will be able to practice and reinforce arithmetic, fractions, and algebraic thinking through adaptive gameplay.
+</edgms:learningObjective>
+
+<edgms:genre>Role-Playing Game (RPG)</edgms:genre>
+
+<edgms:platform>Web Browser</edgms:platform>
+<edgms:platform>iOS</edgms:platform>
+<edgms:platform>Android</edgms:platform>
+
+<edgms:playMode>Single-player</edgms:playMode>
+
+<edgms:educationalUseType>Explicitly Educational Game</edgms:educationalUseType>
+
+<edgms:interactivityType>Active</edgms:interactivityType>
+
+<edgms:pricingModel>Freemium</edgms:pricingModel>
+
+```
+
+</edgms:educationalDigitalGame>
