@@ -92,20 +92,22 @@ EDGMS는 값의 일관성을 높이기 위해 여러 요소에 controlled vocabu
 
 EDGMS의 전체 XSD 파일은 이 GitHub repository에 업로드하였다.
 
-- [edgms.xsd](schema/edgms.xsd)
+* [edgms.xsd](schema/edgms.xsd)
 
 검증을 위한 direct raw URL은 다음과 같다.
 
 ```text
 https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/schema/edgms.xsd
+```
 
 이 XSD 파일은 EDGMS XML 레코드의 구조, 요소 순서, 데이터 타입, 필수 요소, 반복 가능 요소, controlled vocabulary 제약을 정의한다. 샘플 XML 레코드는 이 XSD 파일을 참조하여 validation할 수 있도록 구성하였다.
 
-# 5. Sample XML Records
+## 5. Sample XML Records
 
 다음 샘플 XML 레코드는 실제 교육용 디지털 게임을 EDGMS로 어떻게 기술할 수 있는지 보여준다.
 
-Minecraft: Education Edition
-Prodigy Math
+* [Minecraft: Education Edition](examples/minecraft.xml)
+* [Prodigy Math](examples/prodigymath.xml)
 
 각 XML 레코드는 EDGMS XSD 구조를 따르도록 작성되었으며, 게임의 기본 설명 정보와 교육용 게임 특화 정보를 함께 포함한다. 예를 들어 Minecraft: Education Edition 레코드는 제목, 제작자, 발행자, 설명, 언어, 발행일, 주제뿐 아니라 교육 수준, 학습 목표, 장르, 플랫폼, 플레이 방식, 교육적 활용 유형, 상호작용 유형, 가격 모델을 포함한다.
+
