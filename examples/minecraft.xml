@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edgms:educationalDigitalGame
+xmlns:edgms="http://edgms.org/schema/"
+xmlns:dcterms="http://purl.org/dc/terms/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://edgms.org/schema/ edgms.xsd">
+
+```
+
+<!--
+    XML instance record for Minecraft: Education Edition.
+    This record follows the EDGMS XSD structure.
+
+    AI 사용 및 수정 내역:
+    기본 틀은 AI를 사용했고, 각 요소의 내용은 Draft 3에서 작성한 내용과 위키피디아를 기반으로 작성했다.
+
+    수정 1. xmlns="http://edgms.org/schema/"도 함께 선언했었는데, xmlns:edgms="http://edgms.org/schema/"가 있어 굳이 넣을 필요 없다고 판단해 삭제했다.
+-->
+
+<dcterms:title>Minecraft: Education Edition</dcterms:title>
+
+<dcterms:creator>Mojang Studios</dcterms:creator>
+
+<dcterms:publisher>Microsoft</dcterms:publisher>
+
+<dcterms:description>
+    Minecraft: Education Edition is an education-focused sandbox game in which students build structures, explore virtual environments, solve problems, and complete teacher-designed lessons. 
+    It supports classroom activities in STEM, coding, creativity, collaboration, and project-based learning.
+</dcterms:description>
+
+<dcterms:language>en</dcterms:language>
+<dcterms:language>ko</dcterms:language>
+
+<dcterms:issued>2016</dcterms:issued>
+
+<dcterms:subject>Science</dcterms:subject>
+<dcterms:subject>Computer Science</dcterms:subject>
+<dcterms:subject>General</dcterms:subject>
+
+<edgms:educationalLevel>Elementary School (K-5)</edgms:educationalLevel>
+<edgms:educationalLevel>Middle School (6-8)</edgms:educationalLevel>
+<edgms:educationalLevel>High School (9-12)</edgms:educationalLevel>
+
+<edgms:learningObjective>
+    Students will be able to apply creativity, collaboration, problem-solving, and basic computational thinking skills through project-based activities in a sandbox game environment.
+</edgms:learningObjective>
+
+<edgms:genre>Sandbox</edgms:genre>
+
+<edgms:platform>Windows</edgms:platform>
+<edgms:platform>macOS</edgms:platform>
+<edgms:platform>iOS</edgms:platform>
+
+<edgms:playMode>Single-player</edgms:playMode>
+<edgms:playMode>Cooperative Multiplayer</edgms:playMode>
+<edgms:playMode>Classroom-wide</edgms:playMode>
+
+<edgms:educationalUseType>Explicitly Educational Game</edgms:educationalUseType>
+
+<edgms:interactivityType>Active</edgms:interactivityType>
+
+<edgms:pricingModel>Institutional License</edgms:pricingModel>
+```
+
+</edgms:educationalDigitalGame>
