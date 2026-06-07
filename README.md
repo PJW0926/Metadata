@@ -401,7 +401,7 @@ EDGMS의 전체 XSD 파일은 이 GitHub repository에 업로드하였다.
 검증을 위한 direct raw URL은 다음과 같다.
 
 ```text
-https://raw.githubusercontent.com/USERNAME/REPOSITORY/main/schema/edgms.xsd
+https://raw.githubusercontent.com/PJW0926/REPOSITORY/main/schema/edgms.xsd
 ```
 
 이 XSD 파일은 EDGMS XML 레코드의 구조, 요소 순서, 데이터 타입, 필수 요소, 반복 가능 요소, controlled vocabulary 제약을 정의한다. 샘플 XML 레코드는 이 XSD 파일을 참조하여 validation할 수 있도록 구성하였다.
