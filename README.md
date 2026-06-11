@@ -293,7 +293,7 @@ Recommended values for `dcterms:subject`:
 * General
 * Other
 
-Because `dcterms:subject` is reused from the external DCMI Terms schema, these values are documented as a local EDGMS recommendation rather than enforced directly as a newly defined local element.
+dcterms:subject는 외부 DCMI Terms 스키마에서 재사용한 요소이므로, EDGMS의 로컬 권장사항으로 문서화하였다.
 
 #### Appendix B — Educational Level
 
