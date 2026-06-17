@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
 
 <edgms:educationalDigitalGame
 xmlns:edgms="http://edgms.org/schema/"
 xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://edgms.org/schema/ edgms.xsd">
-
-```
 
 <!--
     XML instance record for Prodigy Math.
@@ -56,6 +54,5 @@ xsi:schemaLocation="http://edgms.org/schema/ edgms.xsd">
 
 <edgms:pricingModel>Freemium</edgms:pricingModel>
 
-```
 
 </edgms:educationalDigitalGame>

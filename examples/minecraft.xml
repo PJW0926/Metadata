@@ -6,7 +6,6 @@ xmlns:dcterms="http://purl.org/dc/terms/"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://edgms.org/schema/ edgms.xsd">
 
-```
 
 <!--
     XML instance record for Minecraft: Education Edition.
@@ -61,6 +60,5 @@ xsi:schemaLocation="http://edgms.org/schema/ edgms.xsd">
 <edgms:interactivityType>Active</edgms:interactivityType>
 
 <edgms:pricingModel>Institutional License</edgms:pricingModel>
-```
 
 </edgms:educationalDigitalGame>
