@@ -382,7 +382,7 @@ EDGMS의 전체 XSD 파일은 이 GitHub repository에 업로드하였다.
 
 * [edgms.xsd](schema/edgms.xsd)
 
-검증을 위한 direct raw URL은 다음과 같다.
+direct raw URL은 다음과 같다.
 
 ```text
 https://raw.githubusercontent.com/PJW0926/Metadata/main/schema/edgms.xsd
