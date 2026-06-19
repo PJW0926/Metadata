@@ -41,8 +41,8 @@
         dcterms:language, dcterms:issued, dcterms:subject를 직접 참조하므로
         DCMI Metadata Terms XSD를 import한다.
 
-        IEEE LOM은 educationalLevel과 interactivityType 설계에 개념적으로 참고되었지만,
-        이 XSD에서 lom: 접두어가 붙은 외부 요소를 직접 ref로 사용하지 않으므로 import하지 않았다.
+        IEEE LOM의 'educational' 카테고리는 educationalLevel과 interactivityType 등 학습 정보 설계에 참고했지만,
+        이 XSD에서는 직접 import하지 않았다.
     -->
         
     <xs:import
@@ -71,7 +71,7 @@
 
                 <!--
                     dcterms:title:
-                    게임의 공식 제목을 쓴다. 일반적인 기술 메타데이터이므로 EDGMS에서 새로 만들지 않고
+                    게임의 공식 제목, 명칭을 쓴다. 일반적인 기술 메타데이터이므로 EDGMS에서 새로 만들지 않고
                     DCMI Terms의 title 요소를 재사용한다. 필수이며 반복하지 않는다.
                 -->
                 <xs:element ref="dcterms:title" minOccurs="1" maxOccurs="1">
@@ -84,7 +84,7 @@
 
                 <!--
                     dcterms:creator:
-                    게임 개발자 또는 개발 스튜디오를 기록한다. 하나의 게임에 여러 개발자가 있을 수 있으므로
+                    게임 개발자나 개발 스튜디오를 기록한다. 하나의 게임에 여러 개발자가 있을 수 있으므로
                     반복 가능하게 설정하였다.
                 -->
                 <xs:element ref="dcterms:creator" minOccurs="1" maxOccurs="unbounded">
@@ -110,7 +110,7 @@
 
                 <!--
                     dcterms:description:
-                    게임의 내용, 중심 메커니즘을 설명하는 요소이다.
+                    게임의 내용, 중심 메커니즘을 간략하게 설명하는 요소이다.
                     이용자가 게임을 식별하고 선택하는 데 중요하므로 필수 요소로 두었다.
                 -->
                 <xs:element ref="dcterms:description" minOccurs="1" maxOccurs="1">
