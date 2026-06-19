@@ -34,7 +34,7 @@ EDGMS에서 새롭게 정의한 요소는 edgms:educationalLevel, edgms:learning
 
 XML Schema는 EDGMS의 구조와 검증 규칙을 기계가 처리할 수 있는 형식으로 표현하기 위해 사용하였다. XSD는 각 요소의 순서, 필수 여부, 반복 가능 여부, 데이터 타입, controlled vocabulary 제약을 정의한다. 이를 통해 XML 레코드가 EDGMS의 구조를 제대로 따르는지 검증할 수 있다.
 
-또한 XSD 파일에는 xs:documentation annotation과 design-intent comment를 포함하여 각 요소가 어떤 의도로 설계되었는지 설명하였다. 이는 스키마를 실제로 구현하려는 이용자가 요소의 의미와 사용 방식을 이해하는 데 도움을 준다.
+또한 XSD 파일에는 xs:documentation annotation를 포함하여 각 요소가 어떤 의도로 설계되었는지 설명하였다. 
 
 ## 3. Vocabulary Specification
 
